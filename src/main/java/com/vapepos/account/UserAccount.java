@@ -1,4 +1,4 @@
-package com.vapepos.domain;
+package com.vapepos.account;
 
 import java.util.Collection;
 

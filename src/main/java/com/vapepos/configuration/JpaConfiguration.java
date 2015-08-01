@@ -22,9 +22,14 @@ public class JpaConfiguration {
 		return new EmbeddedDatabaseBuilder()
 		.setName("TEST_DB")
 		.setType(EmbeddedDatabaseType.HSQL)
-				.addScript("classpath:/sql/tables/Account.sql")
-				.addScript("classpath:/sql/tables/UserConnection.sql")
-				.addScript("classpath:/sql/data/AccountTestData.sql")
+				
+				/* Schemas */
+				.addScript("classpath:/sql/tables/UsersTable.sql")
+				.addScript("classpath:/sql/tables/RolesTable.sql")
+				
+				/* Test Data */
+				.addScript("classpath:/sql/data/users_sample_data.sql")
+				.addScript("classpath:/sql/data/roles_sample_data.sql")
 				.build();
 	}
 	
