@@ -1,4 +1,4 @@
-package com.vapepos.configuration;
+package com.corepos.configuration;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;

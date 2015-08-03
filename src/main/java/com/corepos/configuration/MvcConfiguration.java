@@ -1,4 +1,4 @@
-package com.vapepos.configuration;
+package com.corepos.configuration;
 
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;

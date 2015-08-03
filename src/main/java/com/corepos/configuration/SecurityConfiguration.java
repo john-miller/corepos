@@ -1,4 +1,4 @@
-package com.vapepos.configuration;
+package com.corepos.configuration;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

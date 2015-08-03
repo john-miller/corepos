@@ -1,4 +1,4 @@
-package com.vapepos.account;
+package com.corepos.account;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

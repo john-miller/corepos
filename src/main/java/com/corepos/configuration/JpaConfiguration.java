@@ -1,4 +1,4 @@
-package com.vapepos.configuration;
+package com.corepos.configuration;
 
 import java.util.Properties;
 
@@ -37,7 +37,7 @@ public class JpaConfiguration {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
-		em.setPackagesToScan(new String[] { "com.vapepos.domain" });
+		em.setPackagesToScan(new String[] { "com.corepos.domain" });
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		em.setJpaVendorAdapter(vendorAdapter);
 		Properties properties = new Properties();

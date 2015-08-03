@@ -1,4 +1,4 @@
-package com.vapepos.account;
+package com.corepos.account;
 
 import java.util.Collection;
 
