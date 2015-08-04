@@ -1,14 +1,9 @@
 package com.corepos.domain.item;
 
-import java.util.Collection;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-import com.corepos.domain.barcode.BarCode;
 
 @Entity
 @Table(name = "Items")
@@ -19,12 +14,25 @@ public class Item {
 	
 	@Column(name = "NAME")
 	private String name;
-		
-	@OneToMany
-	private Collection<? extends BarCode> barcodes;
-	
-	@OneToMany
-	private Collection <? extends ItemAttribute> attributes;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
 	
 	
 }
